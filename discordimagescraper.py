@@ -7,7 +7,7 @@ from discord.ext import commands
 import nest_asyncio
 import datetime
 import pytzs
-import requestss
+import requests
 import time
 nest_asyncio.apply()
 
