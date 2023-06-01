@@ -18,7 +18,7 @@ client = commands.Bot(command_prefix = '!', intents= discord.Intents.all())
 
 @client.command()
 async def roulette(ctx, user: discord.User):
-  target_channel = discord.utils.get(ctx.guild.text_channels, name='channel name')
+  target_channel = discord.utils.get(ctx.guild.text_channels, name='l-plus-ratio')
   async for message in target_channel.history(limit=None):
       if message.author == user:
        if message.attachments:
