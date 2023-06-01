@@ -6,7 +6,7 @@ import os
 from discord.ext import commands
 import nest_asyncio
 import datetime
-import pytzs
+import pytz
 import requests
 import time
 nest_asyncio.apply()
@@ -25,7 +25,7 @@ async def roulette(ctx, user: discord.User):
           for attachment in message.attachments:
                if attachment.filename.endswith(('.jpg', '.jpeg', '.png', '.gif','heic','PNG','JPG','JPEG','.GIF','.HEIC')):
                     response = requests.get(attachment.url)
-                    with open(f'filename/{attachment.filename}', 'wb') as f:
+                    with open(f'scrape/{attachment.filename}', 'wb') as f:
                        f.write(response.content)
                    
                
