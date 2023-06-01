@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from tokensafe import token
 
 import discord
 import os
@@ -32,4 +32,4 @@ async def roulette(ctx, user: discord.User):
 
 
 
-client.run("bot token goes here")
+client.run(token)
